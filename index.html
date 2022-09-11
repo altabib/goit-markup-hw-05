@@ -35,12 +35,12 @@
         <div class="contact-header">
           <a href="mailto:info@devstudio.com" class="hdcontact link first-link"
             ><svg class="contact-icon" width="16" height="12">
-              <use href="./img/symbol-defs.svg#icon-mail"></use></svg
-            >info@devstudio.com
+              <use href="./img/symbol-defs.svg#icon-mail"></use></svg>
+            info@devstudio.com
           </a>
 
           <a href="tel:+380961111111" class="hdcontact link"
-            ><svg class="contact-icon" width="16" height="12">
+            ><svg class="contact-icon" width="10" height="16">
               <use href="./img/symbol-defs.svg#icon-phone"></use>
             </svg>
             +38 096 111 11 11</a
@@ -53,7 +53,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="button" type="button">Замовити послугу</button>
+          <button class="button" type="button " data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -114,30 +114,36 @@
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="doingv-list list">
-            <li class="list-item"
+            <li class="dot-list-item"
               ><img
                 class="img"
                 src="./img/img-work/img.png"
                 alt="жіночі руки набирають текст на плашеті, який дублюється на моніторі компютера"
                 width="370"
                 height="290"
-            /></li>
-            <li class="list-item"
+            />
+          <p class="image-text">Десктопні додатки</p>
+          </li>
+            <li class="dot-list-item"
               ><img
                 class="img"
                 src="./img/img-work/img(1).png"
                 alt="жіночі руки тримаючи телефон cинхронизують його з компютером"
                 width="370"
                 height="290"
-            /></li>
-            <li class="list-item"
+            />
+          <p class="image-text">Мобільні додатки</p>
+          </li>
+            <li class="dot-list-item"
               ><img
                 class="img"
                 src="./img/img-work/img(2).png"
                 alt="тримає в руках планшет на якому відображається палітра кольорів"
                 width="370"
                 height="290"
-            /></li>
+            />
+          <p class="image-text">Дизайнерські рішення</p>
+          </li>
           </ul>
         </div>
       </section>
@@ -551,5 +557,16 @@
         </div>
       </div>
     </footer>
+    <!--Modal window-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" data-modal-close>
+          <svg class="close-icon" width="11" height="11">
+            <use href="./img/symbol-defs.svg#icon-Modal-Close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./JS/modal.js"></script>
   </body>
 </html>
